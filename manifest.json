@@ -3,42 +3,42 @@
 	"short_name": "PUBG",
     "icons": [
         {
-            "src": "images/icon32x32.png",
+            "src": "/pwa/images/icon32x32.png",
             "sizes": "32x32",
             "type": "image/png"
         },
         {
-            "src": "images/icon128x128.png",
+            "src": "/pwa/images/icon128x128.png",
             "sizes": "128x128",
             "type": "image/png"
         },
         {
-            "src": "images/icon144x144.png",
+            "src": "/pwa/images/icon144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "images/icon152x152.png",
+            "src": "/pwa/images/icon152x152.png",
             "sizes": "152x152",
             "type": "image/png"
         },
         {
-            "src": "images/icon192x192.png",
+            "src": "/pwa/images/icon192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "images/icon256x256.png",
+            "src": "/pwa/images/icon256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "images/icon512x512.png",
+            "src": "/pwa/images/icon512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-	"start_url": "/index.html",
+	"start_url": "/",
 	"display": "standalone",
 	"background_color": "black",
 	"theme_color": "#161616"
