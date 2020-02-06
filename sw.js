@@ -25,6 +25,7 @@ self.addEventListener('install', function(e){
 			return cache.addAll(filesToCache);
 		})
 	);
+    self.skipWaiting();
 });
 
 self.addEventListener('fetch', function(e){
@@ -36,3 +37,16 @@ self.addEventListener('fetch', function(e){
 	);
 });
 
+self.addEventListener('activate', function(e){
+    console.log("activate", e)
+    e.waitUntil(
+        caches.keys().then((keyList) => {
+      return Promise.all(keyList.map((key) => {
+        if (key !== cacheName) {
+          console.log('[ServiceWorker] Removing old cache', key);
+          return caches.delete(key);
+        }
+      }));
+    })
+    ); 
+});
