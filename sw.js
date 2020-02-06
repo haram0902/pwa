@@ -15,7 +15,7 @@ var filesToCache = [
     '/pwa/images/intro/intro1.jpg',
     '/pwa/images/intro/intro2.jpg',
     '/pwa/images/control/control1.png',
-    '/pwa/images/control/control2.png'
+    '/pwa/images/control/control2.PNG'
 ];
 
 self.addEventListener('install', function(e){
