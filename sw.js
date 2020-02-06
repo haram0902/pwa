@@ -25,7 +25,6 @@ self.addEventListener('install', function(e){
 			return cache.addAll(filesToCache);
 		})
 	);
-    self.skipWaiting();
 });
 
 self.addEventListener('fetch', function(e){
