@@ -27,27 +27,32 @@ p {
 }
 
 li{
-    display: list-item;
+
     text-align: -webkit-match-parent;
     border: 0;
-    vertical-align: top;
     margin: 0;
+    padding: 0;
     text-decoration: none;
+    float: left;
 }
 
 li>a{
     background: #161616;
-    padding: 13px 0 13px 28px;
+    padding: 13px 25px 13px 25px;
     border: 0;
-    font-size: 16px;
+    margin: 0;
+    font-size: 13px;
     font-family: '맑은고딕', MalgunGothic;
-    display: block;
-    position: relative;
+    display: inline-block;
     text-decoration: none;
     color: white;
 }
 
 .container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .title {
@@ -55,16 +60,13 @@ li>a{
 }
 
 .main_img {
-    position: fixed;
-    top: 0;
-    left: 245px;
-    right: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 500px;
     background-repeat: no-repeat;
+    background-size: 100%;
     background-position: 0 0;
-    background-image:url(../images/index/bg_battleground_v3.jpg)
+    background-image:url(../images/index/bg_battleground_m_v3.jpg)
 }
 .main{
     position: relative;
@@ -72,30 +74,30 @@ li>a{
     width: auto;
     background: white;
     display: block;
-    margin-left: 245px;
     padding: 50px;
 }
 
 .main_img .main_txt {
     position: absolute;
-    top: 340px;
-    left: 137px;
-    font-size: 20px;
-    line-height: 34px;
+    top: 136px;
+    left: 31px;
+    font-size: 13px;
+    line-height: 20px;
     color: white;
     font-family: '맑은고딕', MalgunGothic;
 }
 
 .main_img a.btn_gate {
     position: absolute;
-    top: 493px;
-    left: 139px;
-    width: 223px;
-    height: 74px;
-    padding: 24px 0px;
+    top: 230px;
+    left: 31px;
+    width: 105px;
+    height: 35px;
+    padding: 9px 0px;
     background: url(../images/index/btn_intro.png) no-repeat;
+    background-size: 105px auto;
     font-family: SeoulNamsan;
-    font-size: 22px;
+    font-size: 13px;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -106,70 +108,69 @@ li>a{
     overflow: hidden;
     margin-bottom: 0;
     line-height: 1.2;
-    z-index: 20;
+    z-index: 10;
+    float: left;
+    display: block;
 }
 
 .site-title a{
     display: block;
     overflow: hidden;
-    position: static;
-    width: 245px;
-    height: 163px;
-    margin: 0 auto;
-    background: url(../images/index/img_logo_v2.jpg) no-repeat;
-    background-size: 245px 163px;
+    width: 42px;
+    height: 25px;
+    padding: 0;
+    margin: 10px 10px;
+    background: url(../images/index/img_logo_m_v2.png) no-repeat;
+    background-size: 42px 25px;
     line-height: 999px;
     animation: none;
     transition: none;
 }
 
 .sidebar{
+    width: auto;
+    height: 45px;
     position: relative;
-    display:block;
-    overflow: visible;
-    float: left;
-    left: 0;
-    width: 245px;
-    background: black;
+    padding: 5px 5px;
 }
 
 .h_tit{
-    margin-top: 46px;
+
     letter-spacing: -3px;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 15px;
     color: #f09a09;
 }
 
 h2{
-    margin-top: 36px;
-    font-size: 26px;
+    margin-top: 16px;
+    font-size: 13px;
     letter-spacing: -2px;
     color: #333;
 }
 
 .content{
-    margin-top: 200px;
     display: block;
     box-sizing: border-box;
     font-family: SeoulNamsan, MalgunGothic;
     font-size: 16.8px;
     font-stretch: 100%;
     font-style: normal;
-    width: 865px;
+    width: 100%;
     height: 100%;
 }
 
 .content p{
     margin-top: 12px;
     margin-bottom: 8px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
     font-family: '맑은고딕', MalgunGothic;
     color: #5b5b5b;
 }
 
 .v_img{
+    display: none;
     overflow: hidden;
     position: absolute;
     top: 0;
