@@ -103,6 +103,10 @@ li>a{
     text-align: center;
 }
 
+.main_img a.btn_gate.install{
+    top: 280px;
+}
+
 .site-title{
     text-align: center;
     overflow: hidden;
