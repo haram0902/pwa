@@ -1,6 +1,8 @@
 var cacheName = 'guide-pubg';
 var filesToCache = [
 	'/pwa/',
+    '/pwa/intro',
+    '/pwa/control',
 	'/pwa/index.html',
     '/pwa/intro.html',
     '/pwa/control.html',
