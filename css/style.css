@@ -1,0 +1,185 @@
+body {
+	font-family: sans-serif;
+    overflow: initial !important;
+}
+
+html,
+.fullscreen {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    background-color: black;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, th, td, form, fieldset, legend, textarea, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    border: 0;
+    vertical-align: top;
+    margin: 0;
+    text-decoration: none;
+}
+
+li>a{
+    background: #161616;
+    padding: 13px 0 13px 28px;
+    border: 0;
+    font-size: 16px;
+    font-family: '맑은고딕', MalgunGothic;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+}
+
+.title {
+	font-size: 3rem;
+}
+
+.main_img {
+    position: fixed;
+    top: 0;
+    left: 245px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.main{
+    position: relative;
+    height: 100%;
+    width: auto;
+    background: white;
+    display: block;
+    margin-left: 245px;
+    padding: 50px;
+}
+
+.main_img .main_txt {
+    position: absolute;
+    top: 340px;
+    left: 137px;
+    font-size: 20px;
+    line-height: 34px;
+    color: white;
+    font-family: '맑은고딕', MalgunGothic;
+}
+
+.main_img a.btn_gate {
+    position: absolute;
+    top: 493px;
+    left: 139px;
+    width: 223px;
+    height: 74px;
+    padding: 24px 0px;
+    background: url(../images/index/btn_intro.png) no-repeat;
+    font-family: SeoulNamsan;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.site-title{
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    line-height: 1.2;
+    z-index: 20;
+}
+
+.site-title a{
+    display: block;
+    overflow: hidden;
+    position: static;
+    width: 245px;
+    height: 163px;
+    margin: 0 auto;
+    background: url(../images/index/img_logo_v2.jpg) no-repeat;
+    background-size: 245px 163px;
+    line-height: 999px;
+    animation: none;
+    transition: none;
+}
+
+.sidebar{
+    position: relative;
+    display:block;
+    overflow: visible;
+    float: left;
+    left: 0;
+    width: 245px;
+    background: black;
+}
+
+.h_tit{
+    margin-top: 46px;
+    letter-spacing: -3px;
+    font-weight: 400;
+    font-size: 36px;
+    color: #f09a09;
+}
+
+h2{
+    margin-top: 36px;
+    font-size: 26px;
+    letter-spacing: -2px;
+    color: #333;
+}
+
+.content{
+    margin-top: 200px;
+    display: block;
+    box-sizing: border-box;
+    font-family: SeoulNamsan, MalgunGothic;
+    font-size: 16.8px;
+    font-stretch: 100%;
+    font-style: normal;
+    width: 865px;
+    height: 100%;
+}
+
+.content p{
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: '맑은고딕', MalgunGothic;
+    color: #5b5b5b;
+}
+
+.v_img{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 163px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: cover;
+}
+
+img{
+    height: auto;
+}
