@@ -19,6 +19,7 @@ var filesToCache = [
 ];
 
 self.addEventListener('install', function(e){
+    console.log("install");
 	e.waitUntil(
 		caches.open(cacheName).then(function(cache){
 			return cache.addAll(filesToCache);
@@ -27,6 +28,7 @@ self.addEventListener('install', function(e){
 });
 
 self.addEventListener('fetch', function(e){
+    console.log("fetch", e);
 	e.respondWith(
 		caches.match(e.request).then(function(response){
 			return response || fetch(e.request);
@@ -35,6 +37,7 @@ self.addEventListener('fetch', function(e){
 });
 
 self.addEventListener('activate', function(e){
+    console.log("activate", e)
     e.waitUntil(
         caches.keys().then((keyList) => {
       return Promise.all(keyList.map((key) => {
